@@ -19,7 +19,7 @@ async function getComponent() {
 
         const btn = document.createElement("button")
         btn.innerText = "Click Me"
-        btn.onclick = printMe
+        btn.onclick = printMe.bind(null, "Hello RiftKoders Webpack!")
 
         element.appendChild(myLogo)
 
