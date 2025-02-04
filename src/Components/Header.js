@@ -1,3 +1,5 @@
+import "./Header.css"
+
 function HeaderComponent() {
     const element = document.createElement("h1")
 
