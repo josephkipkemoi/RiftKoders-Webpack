@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import "./index.css"
 import Logo from "./logo.svg"
+import printMe from './print'
 
 import HeaderComponent from "./Components/Header"
 
@@ -13,7 +14,13 @@ import HeaderComponent from "./Components/Header"
    const myLogo = new Image()
    myLogo.src = Logo
 
+   const btn = document.createElement("button")
+   btn.innerText = "Click Me"
+   btn.onclick = printMe
+
    element.appendChild(myLogo)
+
+   element.appendChild(btn)
 
    return element;
  }
