@@ -25,9 +25,11 @@ async function getComponent() {
 
         element.appendChild(btn)
 
+
         return element
 }
 
 getComponent().then((component) => {
+    document.body.appendChild(HeaderComponent())
     document.body.appendChild(component)
 })
