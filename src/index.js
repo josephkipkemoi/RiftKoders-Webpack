@@ -14,7 +14,7 @@ import HeaderComponent from "./Components/Header"
    myLogo.src = Logo
 
    element.appendChild(myLogo)
-   
+
    return element;
  }
 
